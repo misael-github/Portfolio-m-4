@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap");
+body {
+  margin: 0;
+}
+
+.container-header {
+  background-image: url("../img/imagenmarcemodificada.jpg");
+  opacity: 0.9;
+  background-position: 55%;
+  height: 100vh;
+  background-size : cover
+  
+}
+
+@media (min-width: 460px) {
+  /* .section-one {
+    
+  } */
+}
+
+.container-header__article {
+  height: 400px;
+  font-family: "Roboto Slab";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-header__article--title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.container-header__article--sub-title{
+  margin-top: 0;
+  font-size: 32px;
+  /* text-align: center; */
+  font-weight: 500;
+}
+
+.section-about-my {
+  font-family: "Poppins";
+  height: 80vh;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-about-my__title {
+  margin-top: 0;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 32px;
+}
+.section-about-my__text {
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 50px;
+}
+.section-my-services {
+  font-family: "Poppins";
+  /* height: 200vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.my-services__title {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 70px;
+}
+.my-services__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+@media (min-width:960px){
+  .my-services__article {
+    width: 30%;
+    
+  }
+  .template-content {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+}
+.my-services__article--img {
+  text-align: center;
+  object-fit: cover;
+  height: 255px;
+  width: 100%;
+}
+.my-services__article--sub-title {
+  text-align: center;
+  font-size: 24px;
+}
+.my-services__article--text {
+  padding: 20px;
+  text-align: center;
+  margin-top: 0;
+}
