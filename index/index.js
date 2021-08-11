@@ -1,4 +1,4 @@
-function addContent (params = {}){
+function addContent ( params = {}){
 const titlee = document.querySelector(".container-header__article--title")
 const subTitle = document.querySelector(".container-header__article--sub-title")
 const template = document.querySelector(".section-my-services--template")
@@ -19,6 +19,8 @@ template.content.querySelector(".my-services__article--text").textContent = para
 const clone = document.importNode(template.content, true);
 container.appendChild(clone);
 }
+
+
 function getData(){
     return fetch(
         "https://cdn.contentful.com/spaces/65tugjdrayxe/environments/master/entries?access_token=cce7c4Jk31S0qKDiyAmkg1LB3Y1U4EvZN2GV7lc2Dwo&content_type=bienvenida"
@@ -46,14 +48,22 @@ function getData(){
         });
     }
 
-
 function main() {
+  
     getData().then((works) => {
       for(const w of works){
         //   console.log(works)
         // a addContent le paso cada vuelta del for que  devuelve cada array con su objeto
           addContent(w)
+         
+          // addContentServices(w)
       }
     })
+     const headerEl = document.querySelector(".container-header__template")
+     header(headerEl)
+     const footerEl = document.querySelector(".container-footer__template")
+     viewFooter(footerEl)
+    const formEl =  document.querySelector(".section-contact")
+    viewContact(formEl)
 }
 main()

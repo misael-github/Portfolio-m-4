@@ -6,7 +6,6 @@
   align-items: center;
   font-family: "Poiret One", "cursive";
   padding: 0px 10px 0 10px;
-  
 }
 .header__logo {
   font-size: 30px;
@@ -34,6 +33,10 @@ color: black;
   
 }
 @media (min-width: 960px) {
+  .header {
+    padding-top: 40px;
+   
+  }
   .header__menu--links {
     display: flex;
   }
@@ -41,9 +44,6 @@ color: black;
     display: none;
   }
   .header__menu {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: flex-end; */
     width: 40%;
     margin-right: 50px;
   }
@@ -58,6 +58,3 @@ color: black;
     justify-content: space-around; 
     
 }
-/* .header__menu--li{
-margin: 0 25px;
-} */
