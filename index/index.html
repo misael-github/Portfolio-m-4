@@ -17,19 +17,41 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../header/header.css" />
-    <link rel="stylesheet" href="../footer/footer.css">
-    <link rel="stylesheet" href="../contacto/contact.css">
-    <title>Portfolio</title>
-    <script async src="../header/header.js"></script>
-    <script src="../contacto/contatc.js"></script>
-    <script src="../footer/footer.js"></script>
+    <link rel="stylesheet" href="../componentes/header/header.css" />
+    <link rel="stylesheet" href="../componentes/footer/footer.css" />
+    <link rel="stylesheet" href="../componentes/contacto/contact.css" />
+    <script src="../componentes/header/header.js"></script>
+    <script src="../componentes/contacto/contact.js"></script>
+    <script src="../componentes/footer/footer.js"></script>
     <script async src="./index.js"></script>
+    <title>Portfolio</title>
   </head>
   <body>
     <div class="container-header">
-    <div class="container-header__template"></div>
-    
+      <div class="container-header__template">
+        <header class="header">
+          <nav class="nav">
+            <input type="checkbox" name="" id="check" />
+            <label for="" class="logo">Misael</label>
+            <ul class="list">
+              <li class="list__items">
+                <a href="./index.html" class="list__items--links">Home</a>
+              </li>
+              <li class="list__items">
+                <a href="../servicios/servicios.html" class="list__items--links">Portfolio</a>
+              </li>
+              <li class="list__items">
+                <a href="../portfolio/portfolio.html" class="list__items--links">Servicios</a>
+              </li>
+              <li class="list__items">
+                <a href="../componentes/contacto/contact.html" class="list__items--links">Contacto</a>
+              </li>
+            </ul>
+            <label for="check" class="checkbtn-icon"><i class="fas fa-bars"></i></label>
+          </nav>
+        </header>
+      </div>
+
       <article class="container-header__article">
         <div>
           <p class="container-header__article--title">Hola</p>
@@ -39,64 +61,46 @@
     </div>
     <section class="section-about-my">
       <h2 class="section-about-my__title">Misael</h2>
-      <p class="section-about-my__text">
-        Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-        vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat
-        arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus.
-        Integer ut iaculis augue, sit amet tincidunt ex. In eleifend justo et
-        sodales semper. Mauris nec tortor lectus. Curabitur nec ultricies dolor.
-      </p>
-    </section>
-    
-    <section class="section-my-services">
-      <h2 class="my-services__title">Mis servicos</h2>
-      <div class="template-content">
-
-      </div>
-      <template class="section-my-services--template">
-      <article class="my-services__article">
-        <img
-          src="../img/sensible.png"
-          alt="imagen"
-          class="my-services__article--img"
-        />
-        <h3 class="my-services__article--sub-title">Hago cosas</h3>
-        <p class="my-services__article--text">
+      <div class="section-about-my__container-img-text">
+        <div class="container--img">
+          <img
+            src="../img/image.png"
+            alt="imagen"
+            class="section-about-my__img"
+          />
+        </div>
+        <p class="section-about-my__text">
           Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
           adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-          vehicula velit. Aenean lobortis posuere tristique.
+          vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat
+          arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus.
+          Integer ut iaculis augue, sit amet tincidunt ex. In eleifend justo et
+          sodales semper. Mauris nec tortor lectus. Curabitur nec ultricies
+          dolor.
         </p>
-      </article>
-    </template>
+      </div>
     </section>
-    <section class="section-contact">
-      <!-- <p class="section-contact__title">Contactame</p>
-      <form action="" method="post"  class="form">
-       
-        <div class="field">
-          <label for="nombre" class="label">Nombre</label>
-          <input type="text" id="nombre" name="nombre" class="input-nombre"> 
-        </div>
-        <div class="field">
-          <label for="email"  class="label">Email</label>
-          <input type="text" id="email" name="email"  class="input-email">
-        </div>
-        <div class="field">
-          <label for="mensaje"  class="label">Mensaje</label>
-          <textarea name="mensaje" id="mensaje" class="textarea"></textarea>
-        </div>
-        <div class="btn">
-          <button type="submit" class="button">Enviar</button>
-        </div>
-      </form> -->
+
+    <section class="section-my-services">
+      <h2 class="my-services__title">Mis servicos</h2>
+      <div class="template-content"></div>
+      <template class="section-my-services--template">
+        <article class="my-services__article">
+          <img
+            src="../img/sensible.png"
+            alt="imagen"
+            class="my-services__article--img"
+          />
+          <h3 class="my-services__article--sub-title">Hago cosas</h3>
+          <p class="my-services__article--text">
+            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+            vehicula velit. Aenean lobortis posuere tristique.
+          </p>
+        </article>
+      </template>
     </section>
+    <section class="section-contact"></section>
     <div class="container-footer__template"></div>
-    <!-- <footer class="footer">
-      <h2 class="footer__title">Misael</h2>
-      <a href="https://www.instagram.com/misa.mizrahi/ " class="footer__links">Instagram <i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/misael-mizrahi-5a4b461b8/" class="footer__links">Linkedin <i class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/misael-github" class="footer__links">Github <i class="fab fa-github"></i></a>
-    </footer> -->
   </body>
 </html>

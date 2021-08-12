@@ -1,0 +1,52 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  .section-my-services {
+      /* height: 200vh; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .my-services__title {
+      text-align: center;
+      font-size: 32px;
+      margin-top: 70px;
+    }
+    .my-services__article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+   
+    
+    .my-services__article--img {
+      text-align: center;
+      object-fit: cover;
+      height: 255px;
+      width: 100%;
+    }
+    .my-services__article--sub-title {
+      text-align: center;
+      font-size: 24px;
+    }
+    .my-services__article--text {
+      padding: 20px;
+      text-align: center;
+      margin-top: 0;
+    }
+    @media (min-width:760px){
+      .my-services__article {
+        width: 40%;
+       
+        
+        
+      }
+      .template-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 50px;
+      }
+    }
