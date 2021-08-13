@@ -1,6 +1,10 @@
 body {
     font-family: 'Poppins', sans-serif;
   }
+  .title__Portfolio{
+    text-align: center;
+    font-size: 48px;
+  }
   .section-my-services {
       /* height: 200vh; */
       display: flex;

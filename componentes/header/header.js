@@ -1,19 +1,44 @@
-// function header (el){
-// const headerEl = document.createElement("div")
-// headerEl.innerHTML = `    <header class="header">
-// <div class="header__logo">
-//   <h3><a href="../index/index.html" class="header__logo--a">Misael</a></h3>
-// </div>
-// <div class="header__menu">
-//   <ul class="header__menu--list">
-//     <li class="header__menu--li"> <a href="../index/index.html" class="header__menu--links">Home</a></li>
-//     <li class="header__menu--li"> <a href="../portfolio/portfolio.html" class="header__menu--links">Portfolio</a></li>
-//     <li class="header__menu--li"> <a href="../servicios/servicios.html" class="header__menu--links">Servicios</a></li>
-//     <li class="header__menu--li"><a href="../componentes/contacto/contact.html" class="header__menu--links">Contacto</a></li>
-//     <span class="header__menu--icon"><i class="fas fa-bars"></i></span>
-//   </ul>
-// </div>
-// </header>`
+function header (el){
+const headerEl = document.createElement("div")
+headerEl.innerHTML = `  <header class="header">
+<nav class="nav">
+  <input type="checkbox" name="" id="check" />
+  <label for="" class="logo">Misael</label>
+  <ul class="list">
+    <li class="list__items">
+      <a href="../index/index.html" class="list__items--links">Home</a>
+    </li>
+    <li class="list__items">
+      <a href="../portfolio/portfolio.html" class="list__items--links">Portfolio</a>
+    </li>
+    <li class="list__items">
+      <a href="../servicios/servicios.html" class="list__items--links">Servicios</a>
+    </li>
+    <li class="list__items">
+      <a href="../componentes/contacto/contact.html" class="list__items--links">Contacto</a>
+    </li>
+  </ul>
+  <label for="check" class="checkbtn-icon"><i class="fas fa-bars icono-hamburguesa"></i><i class="fas fa-times icono-x"></i> </label>
+</nav>
+</header>`
+/*  <i class="fas fa-server">*/
 
-// el.appendChild(headerEl)
-// }
+el.appendChild(headerEl)
+
+}
+// function viewIcons(){
+//     const iconoHamburguesa = document.querySelector(".icono-hamburguesa")
+//     const iconoX = document.querySelector(".icono-x")
+//     const inputCheck = document.querySelector("#check")
+//     inputCheck.addEventListener("click", () => {
+//       iconoX.style.display = "block"
+//       iconoHamburguesa.style.display = "none"
+     
+  
+//       console.log("hola")
+//     })
+//   }
+  
+   
+    
+

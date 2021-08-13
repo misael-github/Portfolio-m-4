@@ -1,4 +1,4 @@
-function addContent ( params = {}){
+function addServicesContent ( params = {}){
 const titlee = document.querySelector(".container-header__article--title")
 const subTitle = document.querySelector(".container-header__article--sub-title")
 const template = document.querySelector(".section-my-services--template")
@@ -31,7 +31,8 @@ function getData(){
         .then((data) => {
         
           const fieldsCollection = data.items.map((item) => {
-              console.log(item)
+              // console.log(item)
+
             // console.log(item.fields.bienvenida)
            return {
             title: item.fields.bienvenida,
@@ -54,7 +55,7 @@ function main() {
       for(const w of works){
         //   console.log(works)
         // a addContent le paso cada vuelta del for que  devuelve cada array con su objeto
-          addContent(w)
+          addServicesContent(w)
          
           // addContentServices(w)
       }
@@ -65,5 +66,6 @@ function main() {
      viewFooter(footerEl)
     const formEl =  document.querySelector(".section-contact")
     viewContact(formEl)
+    // viewIcons()
 }
 main()

@@ -5,16 +5,14 @@ function addContent (params = {}){
     const container = document.querySelector(".template-content")
     
     
-    // titlee.textContent = params.title
-    // subTitle.textContent = params.subTitle
-    
-    // document.querySelector(".section-about-my__text").textContent = params.sectionMyText
     
     template.content.querySelector(".my-services__article--img").src = params.image
+
+    template.content.querySelector(".my-services__article--sub-title").textContent = params.title
     
-    template.content.querySelector(".my-services__article--sub-title").textContent = params.subTitleTemplate
+    template.content.querySelector(".my-services__article--urlProyecto").textContent = params.urlText
     
-    template.content.querySelector(".my-services__article--text").textContent = params.textTemplate
+    template.content.querySelector(".my-services__article--text").textContent = params.text
     
     const clone = document.importNode(template.content, true);
     container.appendChild(clone);
@@ -23,7 +21,7 @@ function addContent (params = {}){
     
     function getData(){
         return fetch(
-            "https://cdn.contentful.com/spaces/65tugjdrayxe/environments/master/entries?access_token=cce7c4Jk31S0qKDiyAmkg1LB3Y1U4EvZN2GV7lc2Dwo&content_type=bienvenida"
+            "https://cdn.contentful.com/spaces/65tugjdrayxe/environments/master/entries?access_token=cce7c4Jk31S0qKDiyAmkg1LB3Y1U4EvZN2GV7lc2Dwo&content_type=dasafioM4Portfolio"
           )
             .then((res) => {
               return res.json();
@@ -34,12 +32,16 @@ function addContent (params = {}){
                   console.log(item)
                 // console.log(item.fields.bienvenida)
                return {
-                title: item.fields.bienvenida,
-                subTitle: item.fields.bienvenidaSubTitle,
-                sectionMyText:item.fields.sectionAboutMyText,
+                // title: item.fields.bienvenida,
+                // subTitle: item.fields.bienvenidaSubTitle,
+                // sectionMyText:item.fields.sectionAboutMyText,
+                // image: item.fields.url,
+                // subTitleTemplate: item.fields.subTitleSectionMyServices,
+                // textTemplate: item.fields.textSectionMyServices
                 image: item.fields.url,
-                subTitleTemplate: item.fields.subTitleSectionMyServices,
-                textTemplate: item.fields.textSectionMyServices
+                title:item.fields.title,
+                text: item.fields.contentText,
+                urlText: item.fields.urlText
                }
                
               });
