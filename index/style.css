@@ -9,12 +9,13 @@ body {
   background-position: 60%;
   background-size: cover;
   height: 100vh;
-  
+ 
 }
 
 @media (min-width: 760px) {
   .container-header {
-    background-image: url("../img/imageMarceCostado.png");
+    background-image: url("../img/dillon-shook-mY3_bvR74fI-unsplash_auto_x2-min.jpg");
+    filter: brightness(100%);
   }
 }
 
@@ -34,7 +35,7 @@ body {
   font-weight: 500;
   color: black;
 }
-.container-header__article--sub-title{
+.container-header__article--sub-title {
   margin-top: 0;
   font-size: 32px;
   /* text-align: center; */
@@ -59,26 +60,24 @@ body {
   font-size: 32px;
 }
 
-@media (min-width:960px){
-
-  .section-about-my__title{
+@media (min-width: 960px) {
+  .section-about-my__title {
     padding-top: 100px;
   }
 }
-.container--img{
-display: none;
+.container--img {
+  display: none;
 }
 .section-about-my__img {
-width: 320px;
-height: 420px;
-
+  width: 320px;
+  height: 420px;
 }
-@media(min-width:960px){
-  .section-about-my{
+@media (min-width: 960px) {
+  .section-about-my {
     background-color: #fff;
     color: black;
   }
-  .container--img{
+  .container--img {
     display: flex;
   }
   .section-about-my__container-img-text {
@@ -95,43 +94,30 @@ height: 420px;
   max-width: 400px;
   margin: auto;
   margin-top: 50px;
-
 }
-@media (min-width:960px){
-  
+@media (min-width: 960px) {
+
   .section-about-my__text {
     text-align: start;
     margin: 50px 0 0 0;
-    align-self:center;
+    align-self: center;
   }
-}
-.section-my-services {
-  font-family: "Poppins";
-  /* height: 200vh; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #FAFAFA;
-}
-.my-services__title {
-  text-align: center;
-  font-size: 32px;
-  margin-top: 70px;
-}
-.my-services__article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
 }
 
-@media (min-width:960px){
+
+/* .my-services__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 8px 10px 0px rgb(228, 228, 228);
+  margin: 20px 20px;
+} */
+
+@media (min-width: 960px) {
   .my-services__article {
     width: 30%;
-    
   }
   .template-content {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -139,11 +125,13 @@ height: 420px;
     margin-top: 50px;
   }
 }
-.my-services__article--img {
+/* .my-services__article--img {
   text-align: center;
   object-fit: cover;
   height: 255px;
   width: 100%;
+  border-radius: 5px 5px 0px 0px;
+  
 }
 .my-services__article--sub-title {
   text-align: center;
@@ -153,4 +141,4 @@ height: 420px;
   padding: 20px;
   text-align: center;
   margin-top: 0;
-}
+} */

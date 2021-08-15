@@ -1,52 +1,78 @@
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .section-my-services {
-    /* height: 200vh; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .my-services__title {
-    text-align: center;
-    font-size: 32px;
-    margin-top: 70px;
+  font-family: "Poppins";
+  /* height: 200vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+}
+.title__Servicios {
+  text-align: center;
+  font-size: 48px;
+  
+}
+.my-services__title {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 70px;
+  
+}
+.my-services__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 20px;
+  /* border-radius: ; */
+  /* box-shadow: 5px 1px 15px 0px; */
+  box-shadow: 0px 8px 10px 0px rgb(228, 228, 228);
+  background-color: #f1eded;
+  height: 400px;
+  max-width: 350px;
+  
+}
+
+.my-services__article--img {
+  /* text-align: center; */
+  /* object-fit: cover; */
+  height: 45%;
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+.my-services__article--sub-title {
+  text-align: center;
+  font-size: 24px;
+}
+.my-services__article--text {
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+ 
+
+}
+@media (min-width: 760px) {
+  .title__Servicios{
+   margin-top: 100px;
+   margin-bottom: 50px;
   }
   .my-services__article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
- 
+    width: 30%;
+   max-width: 300px;
   
-  .my-services__article--img {
-    text-align: center;
-    object-fit: cover;
-    height: 255px;
-    width: 100%;
   }
-  .my-services__article--sub-title {
-    text-align: center;
-    font-size: 24px;
+  .template-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 50px; */
+    /* height: 100vh; */
   }
-  .my-services__article--text {
-    padding: 20px;
-    text-align: center;
-    margin-top: 0;
+  .nav {
+    /* background:linear-gradient(#408195, #00D287); */
+
   }
-  @media (min-width:760px){
-    .my-services__article {
-      width: 40%;
-     
-      
-      
-    }
-    .template-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
-      margin-top: 50px;
-    }
-  }
+}

@@ -1,6 +1,4 @@
 function addContent (params = {}){
-    // const titlee = document.querySelector(".container-header__article--title")
-    // const subTitle = document.querySelector(".container-header__article--sub-title")
     const template = document.querySelector(".section-my-services--template")
     const container = document.querySelector(".template-content")
     
@@ -32,12 +30,6 @@ function addContent (params = {}){
                   console.log(item)
                 // console.log(item.fields.bienvenida)
                return {
-                // title: item.fields.bienvenida,
-                // subTitle: item.fields.bienvenidaSubTitle,
-                // sectionMyText:item.fields.sectionAboutMyText,
-                // image: item.fields.url,
-                // subTitleTemplate: item.fields.subTitleSectionMyServices,
-                // textTemplate: item.fields.textSectionMyServices
                 image: item.fields.url,
                 title:item.fields.title,
                 text: item.fields.contentText,

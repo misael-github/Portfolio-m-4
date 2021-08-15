@@ -6,13 +6,13 @@ headerEl.innerHTML = `  <header class="header">
   <label for="" class="logo">Misael</label>
   <ul class="list">
     <li class="list__items">
-      <a href="../index/index.html" class="list__items--links">Home</a>
+      <a href="../../index/index.html" class="list__items--links">Home</a>
     </li>
     <li class="list__items">
       <a href="../portfolio/portfolio.html" class="list__items--links">Portfolio</a>
     </li>
     <li class="list__items">
-      <a href="../servicios/servicios.html" class="list__items--links">Servicios</a>
+      <a href="../../servicios/servicios.html" class="list__items--links">Servicios</a>
     </li>
     <li class="list__items">
       <a href="../componentes/contacto/contact.html" class="list__items--links">Contacto</a>
@@ -26,18 +26,23 @@ headerEl.innerHTML = `  <header class="header">
 el.appendChild(headerEl)
 
 }
-// function viewIcons(){
-//     const iconoHamburguesa = document.querySelector(".icono-hamburguesa")
-//     const iconoX = document.querySelector(".icono-x")
-//     const inputCheck = document.querySelector("#check")
-//     inputCheck.addEventListener("click", () => {
-//       iconoX.style.display = "block"
-//       iconoHamburguesa.style.display = "none"
+function viewIcons(){
+    const iconoHamburguesa = document.querySelector(".icono-hamburguesa")
+    const iconoX = document.querySelector(".icono-x")
+    const inputCheck = document.querySelector("#check")
+
+    inputCheck.addEventListener("click", () => {
+      iconoX.style.display = "flex"
+      iconoHamburguesa.style.display = "none"
      
-  
-//       console.log("hola")
-//     })
-//   }
+    })
+
+    inputCheck.addEventListener("click", () => {
+      iconoX.style.display = "init"
+      // iconoHamburguesa.style.display = "init"
+    })
+
+  }
   
    
     

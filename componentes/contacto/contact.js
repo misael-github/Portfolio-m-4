@@ -1,7 +1,10 @@
 function viewContact(el){
     const containerForm = document.createElement("div")
     containerForm.innerHTML = `
+    <div class= "container-title">
     <p class="section-contact__title">Contactame</p>
+    </div>
+    <div class= "container-form">
     <form action="" method="post"  class="form">
      
       <div class="field">
@@ -20,6 +23,7 @@ function viewContact(el){
         <button type="submit" class="button">Enviar</button>
       </div>
     </form>
+    </div>
 `
 el.appendChild(containerForm)
 }

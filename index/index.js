@@ -6,7 +6,7 @@ const container = document.querySelector(".template-content")
 
 
 titlee.textContent = params.title
-subTitle.textContent = params.subTitle
+// subTitle.textContent = params.subTitle
 
 document.querySelector(".section-about-my__text").textContent = params.sectionMyText
 
@@ -31,16 +31,17 @@ function getData(){
         .then((data) => {
         
           const fieldsCollection = data.items.map((item) => {
-              // console.log(item)
+              console.log(item)
 
-            // console.log(item.fields.bienvenida)
+            // console.log(item.fields.header)
            return {
-            title: item.fields.bienvenida,
-            subTitle: item.fields.bienvenidaSubTitle,
+            title: item.fields.header,
+            subTitle: item.fields.headerSubTitle,
             sectionMyText:item.fields.sectionAboutMyText,
             image: item.fields.url,
             subTitleTemplate: item.fields.subTitleSectionMyServices,
             textTemplate: item.fields.textSectionMyServices
+
            }
            
           });
@@ -53,7 +54,7 @@ function main() {
   
     getData().then((works) => {
       for(const w of works){
-        //   console.log(works)
+          console.log(works)
         // a addContent le paso cada vuelta del for que  devuelve cada array con su objeto
           addServicesContent(w)
          
@@ -66,6 +67,6 @@ function main() {
      viewFooter(footerEl)
     const formEl =  document.querySelector(".section-contact")
     viewContact(formEl)
-    // viewIcons()
+    viewIcons()
 }
 main()
