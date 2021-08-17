@@ -35,7 +35,7 @@ function getData() {
     })
     .then((data) => {
       const fieldsCollection = data.items.map((item) => {
-        console.log(item);
+        // console.log(item);
 
         // console.log(item.fields.header)
         return {
@@ -55,7 +55,7 @@ function getData() {
 function main() {
   getData().then((works) => {
     for (const w of works) {
-      console.log(works);
+      // console.log(works);
       // a addContent le paso cada vuelta del for que  devuelve cada array con su objeto
       addServicesContent(w);
 

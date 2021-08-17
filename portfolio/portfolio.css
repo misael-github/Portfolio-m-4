@@ -5,7 +5,9 @@ body {
     text-align: center;
     font-size: 48px;
   }
-
+.my-services__url{
+  text-align: center;
+}
     @media (min-width:760px){
       .title__Portfolio{
         margin-top: 100px;

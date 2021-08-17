@@ -22,6 +22,7 @@ function viewContact(el){
       <div class="btn">
         <button type="submit" class="button">Enviar</button>
       </div>
+      <p class="form-message">¡Su mensaje fue enviado correctamente!</p>
     </form>
     </div>
 `
@@ -30,7 +31,7 @@ el.appendChild(containerForm)
 }
 function submitForm() {
   const formEl = document.querySelector(".form");
-  // const messageEl = document.querySelector(".form__message");
+  const messageEl = document.querySelector(".form-message");
 
   formEl.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -46,7 +47,7 @@ function submitForm() {
       }),
       
     });
-    // messageEl.style.display = "inherit";
+    messageEl.style.display = "inherit";
     // messageEl.style.color = "lime";
     formEl.reset();
   });

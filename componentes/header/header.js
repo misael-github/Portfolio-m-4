@@ -9,7 +9,7 @@ headerEl.innerHTML = `  <header class="header">
       <a href="../../index/index.html" class="list__items--links">Home</a>
     </li>
     <li class="list__items">
-      <a href="../portfolio/portfolio.html" class="list__items--links">Portfolio</a>
+      <a href="../../portfolio/portfolio.html" class="list__items--links">Portfolio</a>
     </li>
     <li class="list__items">
       <a href="../../servicios/servicios.html" class="list__items--links">Servicios</a>
