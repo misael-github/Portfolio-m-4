@@ -105,13 +105,6 @@ body {
 }
 
 
-/* .my-services__article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0px 8px 10px 0px rgb(228, 228, 228);
-  margin: 20px 20px;
-} */
 
 @media (min-width: 960px) {
   .my-services__article {
@@ -125,20 +118,3 @@ body {
     margin-top: 50px;
   }
 }
-/* .my-services__article--img {
-  text-align: center;
-  object-fit: cover;
-  height: 255px;
-  width: 100%;
-  border-radius: 5px 5px 0px 0px;
-  
-}
-.my-services__article--sub-title {
-  text-align: center;
-  font-size: 24px;
-}
-.my-services__article--text {
-  padding: 20px;
-  text-align: center;
-  margin-top: 0;
-} */

@@ -31,15 +31,16 @@ function viewIcons(){
     const iconoX = document.querySelector(".icono-x")
     const inputCheck = document.querySelector("#check")
 
-    inputCheck.addEventListener("click", () => {
+    iconoHamburguesa.addEventListener("click", () => {
       iconoX.style.display = "flex"
       iconoHamburguesa.style.display = "none"
      
     })
 
-    inputCheck.addEventListener("click", () => {
-      iconoX.style.display = "init"
-      // iconoHamburguesa.style.display = "init"
+    iconoX.addEventListener("click", () => {
+      
+      iconoX.style.display = "none"
+      iconoHamburguesa.style.display = "flex"
     })
 
   }

@@ -55,5 +55,7 @@ function addContent (params = {}){
         header(headerEl)
         const footerEl = document.querySelector(".container-footer__template")
         viewFooter(footerEl)
+
+        
     }
     main()
