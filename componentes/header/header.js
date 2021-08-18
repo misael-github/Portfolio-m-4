@@ -6,16 +6,16 @@ headerEl.innerHTML = `  <header class="header">
   <label for="" class="logo">Misael</label>
   <ul class="list">
     <li class="list__items">
-      <a href="../../index/index.html" class="list__items--links">Home</a>
+      <a href="../index.html" class="list__items--links">Home</a>
     </li>
     <li class="list__items">
-      <a href="../../portfolio/portfolio.html" class="list__items--links">Portfolio</a>
+      <a href="../portfolio.html" class="list__items--links">Portfolio</a>
     </li>
     <li class="list__items">
-      <a href="../../servicios/servicios.html" class="list__items--links">Servicios</a>
+      <a href="../servicios.html" class="list__items--links">Servicios</a>
     </li>
     <li class="list__items">
-      <a href="../componentes/contacto/contact.html" class="list__items--links">Contacto</a>
+      <a href="../contact.html" class="list__items--links">Contacto</a>
     </li>
   </ul>
   <label for="check" class="checkbtn-icon"><i class="fas fa-bars icono-hamburguesa"></i><i class="fas fa-times icono-x"></i> </label>
