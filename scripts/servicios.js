@@ -59,7 +59,10 @@
             })
             const headerEl = document.querySelector(".container-header__template")
             header(headerEl)
+            
             const footerEl = document.querySelector(".container-footer__template")
             viewFooter(footerEl)
+
+            viewIcons();
         }
         main()

@@ -64,8 +64,10 @@ function main() {
   });
   const headerEl = document.querySelector(".container-header__template");
   header(headerEl);
+
   const footerEl = document.querySelector(".container-footer__template");
   viewFooter(footerEl);
+  
   const formEl = document.querySelector(".section-contact");
   viewContact(formEl);
 

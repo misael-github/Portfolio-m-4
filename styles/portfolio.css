@@ -8,6 +8,12 @@ body {
 .my-services__url{
   text-align: center;
 }
+.my-services__article--urlProyecto {
+ 
+  font-size: 20px;
+  color:rgb(223, 140, 47) ;
+  margin-top: 30px;
+}
     @media (min-width:760px){
       .title__Portfolio{
         margin-top: 100px;

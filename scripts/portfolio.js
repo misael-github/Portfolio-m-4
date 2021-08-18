@@ -8,9 +8,10 @@ function addContent (params = {}){
 
     template.content.querySelector(".my-services__article--sub-title").textContent = params.title
     
-    template.content.querySelector(".my-services__article--urlProyecto").textContent = params.urlText
+    template.content.querySelector(".my-services__article--urlProyecto").href = params.urlText
     
     template.content.querySelector(".my-services__article--text").textContent = params.text
+    
     
     const clone = document.importNode(template.content, true);
     container.appendChild(clone);
@@ -27,8 +28,8 @@ function addContent (params = {}){
             .then((data) => {
             
               const fieldsCollection = data.items.map((item) => {
-                  console.log(item)
-                // console.log(item.fields.bienvenida)
+                  // console.log(item)
+                // console.log(item.fields.urlText)
                return {
                 image: item.fields.url,
                 title:item.fields.title,
@@ -53,8 +54,11 @@ function addContent (params = {}){
         })
         const headerEl = document.querySelector(".container-header__template")
         header(headerEl)
+
         const footerEl = document.querySelector(".container-footer__template")
         viewFooter(footerEl)
+
+        viewIcons();
 
         
     }
