@@ -1,6 +1,6 @@
 .section-contact {
-  height: 110vh;
-  min-height: 650px;
+  /* height: 110vh; */
+  height: 650px;
   background-color: black;
   padding: 0 38px;
 }
