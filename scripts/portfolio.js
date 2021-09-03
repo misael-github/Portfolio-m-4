@@ -11,6 +11,8 @@ function addContent (params = {}){
     template.content.querySelector(".my-services__article--urlProyecto").href = params.urlText
     
     template.content.querySelector(".my-services__article--text").textContent = params.text
+
+    template.content.querySelector(".link-image").href = params.urlText
     
     
     const clone = document.importNode(template.content, true);
