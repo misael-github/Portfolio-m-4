@@ -38,7 +38,7 @@ body {
 .my-services__article--img {
   /* text-align: center; */
   /* object-fit: cover; */
-  height: 45%;
+  /* height: 40%; */
   width: 100%;
   border-radius: 5px 5px 0px 0px;
 }
