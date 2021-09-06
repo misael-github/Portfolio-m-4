@@ -1,14 +1,7 @@
         function addContent (params = {}){
-        // const titlee = document.querySelector(".container-header__article--title")
-        // const subTitle = document.querySelector(".container-header__article--sub-title")
         const template = document.querySelector(".section-my-services--template")
         const container = document.querySelector(".template-content")
         
-        
-        // titlee.textContent = params.title
-        // subTitle.textContent = params.subTitle
-        
-        // document.querySelector(".section-about-my__text").textContent = params.sectionMyText
         
         template.content.querySelector(".my-services__article--img").src = params.image
         
@@ -34,7 +27,7 @@
                       console.log(item)
                     // console.log(item.fields.bienvenida)
                    return {
-                    title: item.fields.bienvenida,
+                    // title: item.fields.bienvenida,
                     subTitle: item.fields.bienvenidaSubTitle,
                     sectionMyText:item.fields.sectionAboutMyText,
                     image: item.fields.url,
@@ -51,10 +44,8 @@
         function main() {
             getData().then((works) => {
               for(const w of works){
-                //   console.log(works)
                 // a addContent le paso cada vuelta del for que  devuelve cada array con su objeto
                   addContent(w)
-                  // addContentServices(w)
               }
             })
             const headerEl = document.querySelector(".container-header__template")
