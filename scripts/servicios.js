@@ -25,7 +25,7 @@
                 
                   const fieldsCollection = data.items.map((item) => {
                       console.log(item)
-                    // console.log(item.fields.bienvenida)
+                    console.log(item.fields.bienvenida)
                    return {
                     // title: item.fields.bienvenida,
                     subTitle: item.fields.bienvenidaSubTitle,

@@ -7,6 +7,7 @@ function addServicesContent(params = {}) {
   const container = document.querySelector(".template-content");
 
   titlee.textContent = params.title;
+  // console.log(params.title)
   // subTitle.textContent = params.subTitle
 
   document.querySelector(".section-about-my__text").textContent =
