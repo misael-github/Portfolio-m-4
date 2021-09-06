@@ -11,7 +11,7 @@
 
 @media (min-width: 760px) {
   .container-header {
-    background-image: url("../img/dillon-shook-mY3_bvR74fI-unsplash_auto_x2-min.jpg");
+    background-image: url("../../img/dillon-shook-mY3_bvR74fI-unsplash_auto_x2-min.jpg");
     filter: brightness(100%);
   }
 }
@@ -31,7 +31,7 @@
   margin-bottom: 15px;
   font-weight: 500;
   color: black;
-  margin-top: 80px;
+  margin-top: 150px;
 }
 .container-header__article--sub-title {
   margin-top: 0;
