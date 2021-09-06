@@ -4,13 +4,13 @@ body {
   .title__Portfolio{
     text-align: center;
     font-size: 48px;
+    margin: 80px auto;
   }
 
 .my-services__url{
   text-align: center;
 }
 .my-services__article--urlProyecto {
- 
   font-size: 20px;
   color:rgb(223, 140, 47) ;
   margin-top: 30px;
@@ -31,7 +31,4 @@ body {
         /* margin-top: 50px; */
       }
     }
-    /* .link-image {
-      width: 100%;
-      height: 100%;
-    } */
+  
