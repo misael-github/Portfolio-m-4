@@ -13,7 +13,8 @@ body {
 .my-services__article--urlProyecto {
   font-size: 20px;
   color:rgb(223, 140, 47) ;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  font-size: 18px;
 }
     @media (min-width:760px){
       .title__Portfolio{
