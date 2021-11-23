@@ -1,3 +1,4 @@
+
 function addServicesContent(params = {}) {
   const titlee = document.querySelector(".container-header__article--title");
   const subTitle = document.querySelector(
@@ -53,6 +54,7 @@ function getData() {
 }
 
 function main() {
+  
   getData().then((works) => {
     for (const w of works) {
       // console.log(works);
@@ -74,5 +76,8 @@ function main() {
   submitForm();
 
   viewIcons();
+
+
 }
+
 main();
