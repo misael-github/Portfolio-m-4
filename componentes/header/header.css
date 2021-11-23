@@ -120,6 +120,7 @@
     left: -100%;
     transition: all 0.5s;
     padding-bottom: 70px;
+    z-index: 1;
   }
 
   .list__items--links:active,
